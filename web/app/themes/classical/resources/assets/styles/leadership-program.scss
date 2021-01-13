@@ -1,0 +1,108 @@
+.page-template-leadership-program {
+
+  p.large-text {
+    font-size: 4.25rem;
+    font-weight: bold;
+    font-family: $font-family-sans-serif;
+    line-height: 1;
+    color: map-get($theme-colors, 'primary');
+    @include partial-border-bottom('light-blue', 25%, 4px);
+  }
+  p.medium-text {
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: $font-family-sans-serif;
+    line-height: 1;
+    color: map-get($theme-colors, 'primary');
+    @include partial-border-bottom('light-blue', 100%, 4px);
+  }
+
+  .lp-header {
+    @extend .bg-img-full;
+    @extend .pb-5;
+    @extend .container-fluid;
+    position: relative;
+    min-height: 656px;
+    background-image: url('../images/lp_header.jpg');
+    color: $white;
+
+    > .container {
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .intro {
+    @extend .py-5 !optional;
+    h3 {
+      color: map-get($theme-colors, 'light-blue');
+    }
+    ul {
+      li {
+        color: map-get($theme-colors, 'light-blue');
+        font-weight: bold;
+      }
+    }
+    p {
+      strong {
+        color: map-get($theme-colors, 'light-blue');
+        font-weight: bold;
+      }
+    }
+  }
+
+  .schedule {
+    @extend .py-5 !optional;
+    h2, h3 {
+      color: map-get($theme-colors, 'light-blue');
+    }
+  }
+
+
+
+  .lp-icons {
+    @extend .py-5 !optional;
+
+    background-color: map-get($theme-colors, 'primary');
+
+    .lp-icon {
+      text-align: center;
+      position: relative;
+
+      img {
+        @extend .img-fluid;
+        @extend .mb-3;
+        max-height: 124px;
+      }
+
+      p {
+        color: $white;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .register-today {
+    @extend .py-5 !optional;
+    color: $white;
+    background-color: map-get($theme-colors, 'light-blue');
+
+    h2 {
+      @include partial-border-bottom('primary', 20%, 4px);
+      &::after {
+        left:0;
+        right:0;
+        margin-left:auto;
+        margin-right:auto;
+      }
+      font-size: 4rem;
+      color: $white;
+      font-family: $font-family-sans-serif;
+      font-weight: bold;
+    }
+  }
+}

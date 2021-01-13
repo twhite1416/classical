@@ -1,0 +1,31 @@
+.page-template-fellows-advisors {
+  #fellows-advisors-nav {
+    .nav-tabs {
+      border-bottom: 4px solid map-get($theme-colors, 'gold');
+      .nav-link {
+        @extend .border-0;
+        
+        &.active {
+          box-shadow: 0 -0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+        }
+        
+        h2 {
+          font-family: $font-family-sans-serif;
+          font-weight: bold;
+          color: map-get($theme-colors, 'primary'); 
+        }    
+      }
+    }
+  }
+
+  #fellows-advisors-tabContent {
+    @extend .py-5;
+    .tab-pane {
+
+    }
+  }
+
+  .virtue-magazine {
+    background-color: map-get($theme-colors, 'bg-grey');
+  }
+}

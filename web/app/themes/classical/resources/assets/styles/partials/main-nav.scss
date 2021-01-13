@@ -1,0 +1,51 @@
+header {
+  .navbar {
+    padding-left: 0;
+    padding-right: 0;
+    
+    #menu-main-nav {
+      li {
+        &.show {
+          > a {
+            color: map-get($theme-colors, 'light-blue');
+            border-bottom: 4px solid map-get($theme-colors, 'light-blue');
+          }
+        }
+        > a {
+          padding-left: 0;
+          padding-right: 0;
+          padding-bottom: 0.25rem;
+          margin-left: 0.5rem;
+          margin-right: 0.5rem;
+          color: map-get($theme-colors, 'primary');
+          font-weight: bold;
+          font-family: 'Arial Narrow', Arial !important;
+          border-bottom: 4px solid $white;
+          &:hover {
+            color: map-get($theme-colors, 'light-blue');
+            border-bottom: 4px solid map-get($theme-colors, 'light-blue');
+          }
+          &:after {
+            display: none;
+          }
+        }
+      }
+      .dropdown-menu {
+        @extend .border-0;
+        @extend .shadow;
+        border-radius: 0;
+        
+        .dropdown-item {
+          font-family: $font-family-sans-serif;
+          font-weight: normal;
+          font-size: 1rem;
+          background-color: transparent;
+          background: transparent;
+          a, &:active, &.active {
+            color: map-get($theme-colors, 'primary');
+          }
+        }        
+      }
+    }
+  }
+}

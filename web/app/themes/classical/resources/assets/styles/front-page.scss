@@ -1,0 +1,32 @@
+.home-cards {
+  .card {
+    @extend .h-100;
+    @extend .shadow-sm;
+    @extend .border-top-0;
+    @extend .border-right-0;
+    @extend .border-left-0;
+    border-radius: 0;
+    border-bottom-width: 3px;
+    
+    &.symposium {
+      h5, .author-line {
+        color: map-get($theme-colors, 'light-blue');
+      }
+      border-bottom-color: map-get($theme-colors, 'light-blue');
+    }
+
+    &.leadership {
+      h5, .author-line {
+        color: map-get($theme-colors, 'primary');
+      }
+      border-bottom-color: map-get($theme-colors, 'primary');
+    }
+
+    &.school {
+      h5, .author-line {
+        color: map-get($theme-colors, 'gold');
+      }
+      border-bottom-color: map-get($theme-colors, 'gold');
+    }
+  }
+}

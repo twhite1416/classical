@@ -1,0 +1,13 @@
+footer {
+  @extend .py-3;
+  @extend .mt-3;
+  background: map-get($theme-colors, 'primary');
+  color: $white;
+
+  .social-media {
+    a {
+      color: $white;
+      text-decoration: none;
+    }
+  }
+}

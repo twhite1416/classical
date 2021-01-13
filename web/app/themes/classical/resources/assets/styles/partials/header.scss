@@ -1,0 +1,44 @@
+/**
+ * Header
+ */
+
+.brand {
+  font-weight: bold;
+}
+
+.full-header {
+  @extend .bg-img-full;
+  @extend .pb-5;
+  @extend .container-fluid;
+  min-height: 656px;
+  background-image: url('../images/main-1.jpg');
+  padding-top: 12rem;
+
+  .full-header-box {
+    &.blue {
+      background-color: rgba(map-get($theme-colors, 'primary'), 80%);
+      color: $white;
+    }
+    h1 {
+      @include partial-border-bottom('light-blue', 25%, 5px);
+      color: $white;
+    }
+  }
+}
+
+.color-header {
+  width: 100%;
+  min-height: 656px;
+  background-color: map-get($theme-colors, 'bg-grey');
+  position: absolute;
+  z-index: -1;
+}
+
+.virtue-header {
+  @extend .bg-img-full;
+  min-height: 656px;
+  width: 100%;
+  background-image: url('../images/virtue-magazine-header.jpg');
+  position: relative;
+  z-index: -1;
+}

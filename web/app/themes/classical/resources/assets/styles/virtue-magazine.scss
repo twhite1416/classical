@@ -1,0 +1,24 @@
+.page-template-virtue-magazine {
+
+  .overlay-header {
+    margin-top: -20rem;
+  }
+  h1 {
+    color: $white;
+    text-transform: uppercase;
+    font-size: 9rem;
+  }
+
+  .main {
+    background: $white;
+    padding-top: 0;
+  }
+
+  .single-cards {
+    background-color: map-get($theme-colors, 'bg-grey');
+  }
+
+  .virtue-magazine-module {
+    background-color: map-get($theme-colors, 'bg-grey');
+  }
+}

@@ -1,0 +1,29 @@
+.card.advisor-card {
+  @extend .border-0;
+  @extend .shadow;
+
+  margin-top: 200px;
+  .card-body {
+    .advisor-img {
+      margin-top: -145px;
+      margin-bottom: 3rem;
+    }
+
+    .card-title {
+      color: map-get($theme-colors, 'gold');
+    }
+
+    .card-text {
+
+    }
+
+    .advisor-links {
+      a {
+        color: map-get($theme-colors, 'gold');
+        font-family: $font-family-sans-serif;
+        text-decoration: underline;
+        font-weight: bold;
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+/**
+ * Global
+ */
+
+a {
+  color: map-get($theme-colors, 'primary');
+}
+
+/**
+ * Block editor color palette utilities
+ * @see https://git.io/JeyD6
+ */
+
+@each $color-name, $color-value in $theme-colors {
+  .has-#{$color-name}-color {
+    color: $color-value;
+  }
+
+  .has-#{$color-name}-background-color {
+    background-color: $color-value;
+  }
+}
+
+.bg-img-full {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.space {
+  padding: 2rem;
+}
+
+.columns-bg {
+  @extend .py-5 !optional;
+  background-image: url('../images/column_bg@2x.png');
+  background-color: map-get($theme-colors, 'bg-grey');
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  .main {
+    @extend .pt-5 !optional;
+  }
+}

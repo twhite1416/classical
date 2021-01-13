@@ -1,0 +1,17 @@
+.card.single-card {
+  @extend .border-0;
+  @extend .shadow;
+  @extend .h-100;
+    
+  .card-body {
+    .card-title {
+      color: map-get($theme-colors, 'primary');
+    }
+
+    .card-text {
+      .author-line {
+
+      }
+    }
+  }
+}
