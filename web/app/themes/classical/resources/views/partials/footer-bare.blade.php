@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row align-items-center">
       <div class="col-3">
-        <img src="@asset('images/ice_logo_footer.svg')" />
+        @svg('images/ice_logo_footer.svg')
       </div>
       <div class="col-3 social-media">
         @hasoption('accounts')
@@ -16,7 +16,7 @@
       @endoption
       </div>
       <div class="col-6 text-center">
-        <img src="@asset('images/gh_footer_logo.svg')" />
+        @svg('images/gh_footer_logo.svg')
       </div>
   </div>
 </footer>

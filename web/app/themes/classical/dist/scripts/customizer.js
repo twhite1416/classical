@@ -1,2 +1,1 @@
 (window.webpackJsonp=window.webpackJsonp||[]).push([[2],{1:function(n,t,i){n.exports=i("LnCJ")},LnCJ:function(n,t,i){(function(n){wp.customize("Classical Education Institute",(function(t){t.bind((function(t){return n(".brand").text(t)}))}))}).call(this,i("xeH2"))},xeH2:function(n,t){!function(){n.exports=this.jQuery}()}},[[1,0]]]);
-//# sourceMappingURL=customizer.js.map

@@ -2,6 +2,13 @@ nav.navbar {
   padding-left: 0;
   padding-right: 0;
 
+  .navbar-brand {
+    svg {
+      max-width: 250px;
+      height: auto;
+    }
+  }
+
   .navbar-nav {
     .nav-item {
       &.show {
