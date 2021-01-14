@@ -7,7 +7,7 @@
   <div class="container">
     <div class="row align-items-center">
       <div class="col-lg-6">
-        <img class="img-fluid" src="@asset('images/hexis_leadership_program.svg')" />
+        @svg('images/apex_logo.svg')
       </div>
       <div class="col-lg-6">
         <p>The Institute for Classical Education has developed a leadership program derived from decades of classical school leadership and best practices  combining the classical and practical components within a virtue-centered community.</p>
