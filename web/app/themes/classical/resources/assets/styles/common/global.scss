@@ -33,6 +33,7 @@ a {
 
 .columns-bg {
   @extend .py-5 !optional;
+
   background-image: url('../images/column_bg@2x.png');
   background-color: map-get($theme-colors, 'bg-grey');
   background-position: top center;

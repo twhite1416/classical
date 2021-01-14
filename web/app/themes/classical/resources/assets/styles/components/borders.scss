@@ -3,7 +3,7 @@
   margin-top: 2rem;
   margin-bottom: 2rem;
 
-  &:after, &::after {
+  &::after {
     content: '';
     width: $width;
     height: $height;
@@ -12,7 +12,8 @@
     bottom: -1rem;
     left: 0;
   }
-  &:before, &::before {
+
+  &::before {
     content: '';
     width: $width;
     height: 3px;
@@ -26,7 +27,8 @@
 @mixin partial-border-bottom($color, $width, $height:3px) {
   position: relative;
   margin-bottom: 2rem;
-  &:after, &::after {
+
+  &::after {
     content: '';
     width: $width;
     height: $height;

@@ -2,20 +2,27 @@
   .donate-content {
     background: map-get($theme-colors, 'gold');
     color: $white;
+
     h2 {
       color: $white;
     }
   }
+
   .first-image {
     @extend .bg-img-full;
+
     background-image: url('../images/Donate-2.jpg');
   }
+
   .second-image {
     @extend .bg-img-full;
+
     background-image: url('../images/Donate-1.jpg');
   }
+
   .third-image {
     @extend .bg-img-full;
+
     background-image: url('../images/Donate.jpg');
   }
 }

@@ -4,16 +4,9 @@
       font-family: $font-family-serif;
       color: map-get($theme-colors, 'primary');
     }
+
     p.intro-content {
       @include partial-border('gold', 25%);
     }
-  }
-
-  .magazine-image {
-
-  }
-
-  .magazine-form {
-
   }
 }

@@ -3,17 +3,18 @@
  */
 
 // These are the defaults, but you can override any values
-$font-family-sans-serif: Arial, sans-serif !default;
-$font-family-serif:      "Minion Pro", Times, serif !default;
-$font-family-monospace:  Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-sans-serif: arial, sans-serif !default;
+$font-family-serif:      "Minion Pro", times, serif !default;
+$font-family-monospace:  menlo, monaco, consolas, "Liberation Mono", "Courier New", monospace !default;
 $font-family-base:       $font-family-sans-serif !default;
-$font-family-nav:        "Arial Narrow", Arial, sans-serif;
+$font-family-nav:        "Arial Narrow", arial, sans-serif;
 $body-color: #363330;
+$white: #fff;
 
 $theme-colors: (
-  'primary': #002A6B,
-  'gold': #7D694F,
-  'white': #ffffff,
-  'light-blue': #2494D4,
+  'primary': #002a6b,
+  'gold': #7d694f,
+  'white': #fff,
+  'light-blue': #2494d4,
   'bg-grey': rgba(125, 75, 109, 5%),
 );

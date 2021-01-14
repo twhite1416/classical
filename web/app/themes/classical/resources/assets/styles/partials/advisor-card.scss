@@ -3,6 +3,7 @@
   @extend .shadow;
 
   margin-top: 200px;
+
   .card-body {
     .advisor-img {
       margin-top: -145px;
@@ -11,10 +12,6 @@
 
     .card-title {
       color: map-get($theme-colors, 'gold');
-    }
-
-    .card-text {
-
     }
 
     .advisor-links {
