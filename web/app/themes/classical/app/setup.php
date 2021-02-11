@@ -120,7 +120,7 @@ add_action('after_setup_theme', function () {
         [
             'name' => __('Primary', 'sage'),
             'slug' => 'primary',
-            'color' => '#525ddc',
+            'color' => '#002a6b',
         ]
     ]);
 }, 20);
@@ -167,3 +167,4 @@ add_action('init', function () {
         'icon_url'      => 'dashicons-megaphone'
     ]);
 });
+

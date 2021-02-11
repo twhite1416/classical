@@ -40,9 +40,3 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-.container {
-  .main {
-    @extend .pt-5 !optional;
-  }
-}

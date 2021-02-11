@@ -7,7 +7,7 @@
       <div class="col-lg-8">
         <h2>Alumna Profile: Interview of Morgan Simms</h2>
         <p>Classical schools look at classic texts and teach students to make distinctions between what is always true and what is bound by time or culture.</p>
-        <a href="#link" class="btn btn-outline-primary" role="button">Read More</a>
+        <a href="/alumna-profile-fall-2020" class="btn btn-outline-primary" role="button">Read More</a>
       </div>
     </div>
   </div>

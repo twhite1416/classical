@@ -1,3 +1,34 @@
+article.first-article {
+  @extend .px-5;
+  @extend .mb-5;
+  
+  border-bottom: 4px solid map-get($theme-colors, 'gold');
+}
+
+.card.single-card-first {
+  @extend .border-0;
+  @extend .h-100;
+
+  background-color: transparent;
+
+  .card-body {
+    .card-title {
+      color: map-get($theme-colors, 'primary');
+    }
+  }
+}
+
+.card.single-card-first.horizontal-card {
+  max-height: 300px;
+
+  .card-image {
+    img {
+      object-fit: cover;
+      min-height: 100%;
+    }
+  }
+}
+
 .card.single-card {
   @extend .border-0;
   @extend .shadow;
@@ -6,6 +37,17 @@
   .card-body {
     .card-title {
       color: map-get($theme-colors, 'primary');
+    }
+  }
+}
+
+.card.single-card.horizontal-card {
+  max-height: 250px;
+
+  .card-image {
+    img {
+      object-fit: cover;
+      min-height: 100%;
     }
   }
 }

@@ -17,7 +17,8 @@ require('laravel-mix-copy-watched');
 mix
   .setPublicPath('./dist')
   .browserSync({
-    proxy: 'https://classical.test'
+    proxy: 'https://classical.test',
+    browser: ["microsoft edge"]
   });
 
 mix

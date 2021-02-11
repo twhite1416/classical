@@ -1,26 +1,23 @@
 <div class="col-12 col-md-6 col-lg-4">
   <div class="card advisor-card">
     <div class="card-body">
-      <img src="@asset('images/advisor1.jpg')" class="advisor-img rounded-circle mx-auto d-block" alt="">
-      <h3 class="card-title">{{$name}}</h3>
+      
+      <img src="@field('image')" class="advisor-img rounded-circle mx-auto d-block" alt="@title">
+      <h3 class="card-title">@title</h3>
       <p>
-        <strong>{{$title}}</strong><br>
-        <strong>{{$location}}</strong>
+        <strong>@field('department')</strong><br>
+        <strong>@field('location')</strong>
       </p>
-      <p class="card-text">{{$text}}</p>
+      <p class="card-text">@field('short_description')</p>
       <ul class="list-unstyled advisor-links">
         <li>
-          <a href="#">Full Bio</a>
+          <a href="@permalink">Full Bio</a>
         </li>
+        @fields('articles')
         <li>
-          <a href="#">Full Bio</a>
+          <a href="@permalink(get_sub_field('article'))">@title(get_sub_field('article'))</a>
         </li>
-        <li>
-          <a href="#">Full Bio</a>
-        </li>
-        <li>
-          <a href="#">Full Bio</a>
-        </li>
+        @endfields
       </ul>
     </div>
   </div>

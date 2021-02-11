@@ -1,4 +1,4 @@
-<footer class="content-info">
+<footer class="content-info site-footer">
   <div class="container">
     <div class="row align-items-center">
       <div class="col-3">

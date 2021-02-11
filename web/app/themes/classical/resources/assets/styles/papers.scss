@@ -1,0 +1,5 @@
+.page-template-presentations-papers {
+  .wide-row:nth-child(odd) {
+    background-color: map-get($theme-colors, 'bg-grey');
+  }
+}

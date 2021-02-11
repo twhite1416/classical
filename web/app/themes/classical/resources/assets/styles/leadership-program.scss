@@ -1,9 +1,4 @@
 .page-template-leadership-program {
-  .lp-header {
-    svg {
-      max-width: 480px;
-    }
-  }
   p.large-text {
     font-size: 4.25rem;
     font-weight: bold;
@@ -31,6 +26,10 @@
     min-height: 656px;
     background-image: url('../images/lp_header.jpg');
     color: $white;
+
+    svg {
+      max-width: 480px;
+    }
 
     > .container {
       margin: 0;

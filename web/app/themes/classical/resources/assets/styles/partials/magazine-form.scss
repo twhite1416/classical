@@ -1,0 +1,15 @@
+.magazine-form {
+  label {
+    color: map-get($theme-colors, 'gold');
+  }
+
+  input,
+  select,
+  textarea {
+    border-radius: 0;
+    background-color: map-get($theme-colors, 'bg-grey');
+    border: 1px solid map-get($theme-colors, 'bg-grey');
+    color: map-get($theme-colors, 'gold');
+    font-weight: bold;
+  }
+}

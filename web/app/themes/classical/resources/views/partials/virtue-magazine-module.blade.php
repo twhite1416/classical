@@ -9,10 +9,8 @@
       <div class="col-4 space magazine-image">
         <img class="img-fluid" src="@asset('images/virtue_mag.png')" />
       </div>
-      <div class="col-4 space magazine-form">
-        <h3>Sign-up today to join our community and receive your first copy.</h3>
-        <img class="img-fluid" src="@asset('images/form2.jpg')" />
-        <a href="#link" class="btn btn-outline-primary" role="button">Submit</a>
+      <div class="col-4 space">
+        @shortcode('[hf_form slug="virtue-newsletter-signup"]')
       </div>
     </div>
   </div>

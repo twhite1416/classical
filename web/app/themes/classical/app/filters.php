@@ -12,5 +12,11 @@ namespace App;
  * @return string
  */
 add_filter('excerpt_more', function () {
-    return ' &hellip; <a href="' . get_permalink() . '">' . __('Continued', 'sage') . '</a>';
+    return '';
 });
+
+// Changing excerpt length
+add_filter( 'excerpt_length', function($length) {
+    return 30;
+} );
+
