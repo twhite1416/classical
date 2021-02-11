@@ -13,6 +13,21 @@ add_action( 'init', function() {
   register_extended_post_type( 'advisory_council', array(
     # Add the post type to the site's main RSS feed:
     'show_in_feed' => true,
+    'show_in_rest' => true,
+    'has_archive' => true,
+    'public' => true,
+    'hierarchical' => false,
+    'supports' => array(
+      'title',
+      'editor',
+      'excerpt',
+      'custom-fields',
+      'thumbnail',
+      'page-attributes'
+    ),
+    'taxonomies' => 'category',
+    'rewrite'   => array( 'slug' => 'advisors' )
+
   ), array(
     # Override the base names used for labels:
     'singular' => 'Advisor',
@@ -27,6 +42,20 @@ add_action( 'init', function() {
   register_extended_post_type( 'fellows', array(
     # Add the post type to the site's main RSS feed:
     'show_in_feed' => true,
+    'show_in_rest' => true,
+    'has_archive' => true,
+    'public' => true,
+    'hierarchical' => false,
+    'supports' => array(
+      'title',
+      'editor',
+      'excerpt',
+      'custom-fields',
+      'thumbnail',
+      'page-attributes'
+    ),
+    'taxonomies' => 'category',
+    'rewrite'   => array( 'slug' => 'fellows' )
   ), array(
     # Override the base names used for labels:
     'singular' => 'Fellow',
@@ -36,3 +65,31 @@ add_action( 'init', function() {
   ) );
 
 } );
+
+add_action( 'init', function() {
+  register_extended_post_type( 'papers', array(
+    # Add the post type to the site's main RSS feed:
+    'show_in_feed' => true,
+    'show_in_rest' => true,
+    'has_archive' => true,
+    'public' => true,
+    'hierarchical' => false,
+    'supports' => array(
+      'title',
+      'editor',
+      'excerpt',
+      'custom-fields',
+      'thumbnail',
+      'page-attributes'
+    ),
+    'taxonomies' => 'category',
+    'rewrite'   => array( 'slug' => 'papers' )
+  ), array(
+    # Override the base names used for labels:
+    'singular' => 'Scholarly Paper',
+    'plural'   => 'Scholarly Papers',
+    'slug'     => 'papers'
+
+  ) );
+
+});
