@@ -1,6 +1,6 @@
 <div class="col-12 col-md-6 col-lg-4 my-5">
   <div class="card single-card" style="">
-    <img src="@asset('images/card1.jpg')" class="card-img-top" alt="@title">
+    @include('partials.featured-img')
     <div class="card-body">
       <h3 class="card-title"><a href="@permalink">@title</a></h3>
       <p class="author-line">By @author()</p>

@@ -1,10 +1,10 @@
 <footer class="content-info site-footer">
   <div class="container">
     <div class="row align-items-center">
-      <div class="col-3">
-        @svg('images/ice_logo_footer.svg')
+      <div class="col-lg-3 pb-3">
+        @svg('images/ice_logo_footer.svg', 'img-fluid')
       </div>
-      <div class="col-3 social-media">
+      <div class="col-lg-4 pb-3 social-media">
         @hasoption('accounts')
           @options('accounts')
             <a href="@sub('home_url')" target="_blank">
@@ -15,8 +15,8 @@
           @endoptions
       @endoption
       </div>
-      <div class="col-6 text-center">
-        @svg('images/gh_footer_logo.svg')
+      <div class="col-lg-4">
+        @svg('images/gh_footer_logo.svg', 'img-fluid')
       </div>
   </div>
 </footer>

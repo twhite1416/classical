@@ -11,7 +11,7 @@
       </div>
       <div class="col-lg-6">
         <p>The Institute for Classical Education has developed a leadership program derived from decades of classical school leadership and best practices  combining the classical and practical components within a virtue-centered community.</p>
-        <a href="#link" class="btn btn-outline-white" role="button">Register Now</a>
+        <a href="/apex-registration" class="btn btn-outline-white" role="button">Register Now</a>
       </div>
     </div>
   </div>
@@ -44,7 +44,7 @@
             <h3>Participant</h3>
             <p class="medium-text">profile</p>
             <p>The ideal candidate for the Virtue Leadership Program is an individual that          aspires to lead and is passionate about the students, school, and the classical philosophy. Program participants are current, emerging, or aspiring leaders of  K-12 institutions who have a minimum of 3 years’ experience.</p>
-            <a href="#link" class="btn btn-outline-primary" role="button">Register Now</a>
+            <a href="/apex-registration" class="btn btn-outline-primary" role="button">Register Now</a>
           </div>
         </div>
       </div>
@@ -127,7 +127,7 @@
       <div class="col-6 text-center">
         <h2>Register Today!</h2>
         <p>Lorem ipsum dolor sit, amet consectetur, adipisicing elit. Id animi consectetur magnam quisquam provident ipsam esse, eaque tempora nam consequatur itaque similique, beatae unde quos iste a quam corrupti consequuntur.</p>
-        <a href="#link" class="btn btn-outline-white" role="button">Register Now</a>
+        <a href="/apex-registration" class="btn btn-outline-white" role="button">Register Now</a>
       </div>
     </div>
   </div>

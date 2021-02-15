@@ -1,5 +1,22 @@
 .page-template-presentations-papers {
+  .author-image {
+    max-width: 250px;
+    height: auto;
+  }
+
   .wide-row:nth-child(odd) {
+    background-color: map-get($theme-colors, 'bg-grey');
+  }
+}
+
+.papers-template-default {
+  .content-bg {
+    @extend .py-5;
+
+    background-color: #fff;
+  }
+
+  .virtue-magazine-module {
     background-color: map-get($theme-colors, 'bg-grey');
   }
 }

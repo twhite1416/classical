@@ -4,8 +4,8 @@
     @fields('carousel_item')
     <div class="carousel-item" style="background-image: url(@sub('background_image'))">
       <div class="container">
-        <div class="row">
-          <div class="col">
+        <div class="row @sub('content_box_position')">
+          <div class="col-lg-5 col-12 col-box">
             <div class="position-box @sub('content_box_position')">
               <div class="full-header-box @sub('content_box_background_color') space">
                 @hassub('logo_image')

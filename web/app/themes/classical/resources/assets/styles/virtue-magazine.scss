@@ -11,10 +11,26 @@
 
   .main {
     background: $white;
+
+    span.color-gold {
+      color: map-get($theme-colors, 'gold');
+    }
   }
 
   .single-cards {
     background-color: map-get($theme-colors, 'bg-grey');
+
+    .card.single-card {
+      overflow: hidden;
+
+      img {
+        @extend .card-img-top;
+
+        object-fit: cover;
+        max-width: 100%;
+        height: 40%;
+      }
+    }
   }
 
   .virtue-magazine-module {

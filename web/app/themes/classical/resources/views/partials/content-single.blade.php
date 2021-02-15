@@ -6,7 +6,7 @@
           {!! $title !!}
         </h1>
 
-        @include('partials/entry-meta')
+        @include('partials.entry-meta')
       </header>
 
       <div class="entry-content">

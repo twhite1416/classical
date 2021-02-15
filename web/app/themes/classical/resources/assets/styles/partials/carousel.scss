@@ -3,9 +3,10 @@
     @extend .pb-5;
 
     .carousel-item {
-      min-height: 656px;
       @extend .bg-img-full;
       @extend .py-5;
+
+      min-height: 656px;
 
       .container {
         @extend .h-100;
@@ -13,33 +14,51 @@
         .row {
           @extend .h-100;
 
-          .col {
+          &.top-right {
+            @extend .justify-content-end;
+          }
+
+          &.top-left {
+            @extend .justify-content-start;
+          }
+
+          &.bottom-right {
+            @extend .justify-content-end;
+          }
+
+          &.bottom-left {
+            @extend .justify-content-start;
+          }
+
+          .col-box {
             @extend .h-100;
 
             position: relative;
 
             .position-box {
-              position: absolute;
-              max-width: 40%;
 
-              &.top-right {
-                top: 0;
-                right: 0;
-              }
+              @include media-breakpoint-up(lg) {
+                position: absolute;
 
-              &.top-left {
-                top: 0;
-                left: 0;
-              }
+                &.top-right {
+                  top: 0;
+                  right: 0;
+                }
 
-              &.bottom-right {
-                right: 0;
-                bottom: 0;
-              }
+                &.top-left {
+                  top: 0;
+                  left: 0;
+                }
 
-              &.bottom-left {
-                left: 0;
-                bottom: 0;
+                &.bottom-right {
+                  right: 0;
+                  bottom: 0;
+                }
+
+                &.bottom-left {
+                  left: 0;
+                  bottom: 0;
+                }
               }
 
               .full-header-box {

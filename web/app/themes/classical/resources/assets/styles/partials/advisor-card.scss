@@ -3,11 +3,14 @@
   @extend .shadow;
 
   margin-top: 200px;
+  min-height: 500px;
 
   .card-body {
     .advisor-img {
       margin-top: -145px;
       margin-bottom: 3rem;
+      height: 250px;
+      width: 250px;
     }
 
     .card-title {

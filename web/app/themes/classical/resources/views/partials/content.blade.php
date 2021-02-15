@@ -8,7 +8,7 @@
       <div class="col-md-8">
         <div class="card-body">
           <a href="@permalink"><h5 class="card-title">@title</h5></a>
-          @include('partials/entry-meta')
+          @include('partials.entry-meta')
           <p class="card-text">@excerpt</p>
         </div>
       </div>
@@ -16,7 +16,7 @@
       <div class="col">
         <div class="card-body">
           <a href="@permalink"><h5 class="card-title">@title</h5></a>
-          @include('partials/entry-meta')
+          @include('partials.entry-meta')
           <p class="card-text">@excerpt</p>
         </div>
       </div>

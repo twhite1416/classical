@@ -37,7 +37,7 @@
         @includeFirst(['partials.content-' . get_post_type(), 'partials.content'])
       @endposts
 
-      @shortcode('[ajax_load_more post_type="post" posts_per_page="10" offset="11"]')
+      @shortcode('[ajax_load_more post_type="post" posts_per_page="10" offset="11" max_pages="2"]')
     </div>
   </div>
 @endsection

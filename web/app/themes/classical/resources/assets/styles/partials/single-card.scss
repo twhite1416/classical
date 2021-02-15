@@ -1,7 +1,6 @@
 article.first-article {
-  @extend .px-5;
   @extend .mb-5;
-  
+
   border-bottom: 4px solid map-get($theme-colors, 'gold');
 }
 
@@ -19,11 +18,12 @@ article.first-article {
 }
 
 .card.single-card-first.horizontal-card {
-  max-height: 300px;
+  overflow: hidden;
 
   .card-image {
     img {
       object-fit: cover;
+      min-width: 100%;
       min-height: 100%;
     }
   }
@@ -42,11 +42,12 @@ article.first-article {
 }
 
 .card.single-card.horizontal-card {
-  max-height: 250px;
+  overflow: hidden;
 
   .card-image {
     img {
       object-fit: cover;
+      min-width: 100%;
       min-height: 100%;
     }
   }

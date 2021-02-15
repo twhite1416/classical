@@ -15,8 +15,8 @@
       <div class="row justify-content-center">
         <div class="col-lg-8">
           <div class="content">
-            <h2>Issue 06 <span class="color-gold">|</span> Pedagogy</h2>
-            <p>Each issue of Virtue will have articles and interviews from the nation’s leading intellectuals; profiles of outstanding teachers, alumni, and students; succinct descriptions of classical education—what, how, and why we teach the liberal arts; essays by leading academic scholars, relating their work to classical education; and an assortment of topics to keep us all thinking afresh, as we continue to pursue the classical ideals of truth, goodness, and beauty</p>
+            <h2>Issue @field('issue_number') <span class="color-gold">|</span> @title</h2>
+            <p>@content</p>
           </div>
           <div class="form pt-3">
             @shortcode('[hf_form slug="virtue-newsletter-signup"]')

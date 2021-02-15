@@ -8,10 +8,10 @@
         <strong>@field('department')</strong><br>
         <strong>@field('location')</strong>
       </p>
-      <p class="card-text">@field('short_description')</p>
+      <p class="card-text">{{ App\trunc(get_field('short_description'))}}</p>
       <ul class="list-unstyled advisor-links">
         <li>
-          <a href="@permalink">Full Bio</a>
+          <a data-toggle="modal" data-target="#modal-{{ get_the_ID() }}" href="@permalink">Full Bio</a>
         </li>
         @fields('articles')
         <li>
@@ -19,6 +19,19 @@
         </li>
         @endfields
       </ul>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal-{{ get_the_ID() }}" tabindex="-1" aria-labelledby="modal-{{ get_the_ID() }}">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        @content
+      </div>
     </div>
   </div>
 </div>

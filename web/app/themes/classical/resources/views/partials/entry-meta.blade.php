@@ -1,10 +1,14 @@
+@if(get_field('author'))
+  @include('partials.custom-entry-meta')
+@elseif(get_field('custom_author_entry'))
+  @include('partials.custom-entry-meta')
+@else
 <p class="byline author vcard">
   <span>{{ __('By', 'sage') }}</span>
-  <a href="{{ get_author_posts_url(get_the_author_meta('ID')) }}" rel="author" class="fn">
-    {{ get_the_author() }}
-  </a>
+    {{ get_the_author_meta('display_name') }}
   |
   <time class="updated" datetime="{{ get_post_time('c', true) }}">
   {{ get_the_date() }}
 </time>  
 </p>
+@endif

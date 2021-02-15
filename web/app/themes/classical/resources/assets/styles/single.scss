@@ -1,11 +1,17 @@
 .single-post {
   .content-bg {
     @extend .py-5;
-    
+
     background-color: #fff;
   }
 
   .virtue-magazine-module {
     background-color: map-get($theme-colors, 'bg-grey');
+  }
+
+  .single-image-header {
+    img {
+      max-height: 500px;
+    }
   }
 }
