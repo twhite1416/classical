@@ -24,7 +24,7 @@
               @endfield
               <div class="card-body">
                 <h5 class="card-title"><a href="@permalink">@title</a></h5>
-                @include('partials.entry-meta')
+                <span class="author-line">@include('partials.entry-meta')</span>
                 <p class="card-text">@excerpt</p>
               </div>
             </div>
@@ -46,7 +46,7 @@
               @endfield
               <div class="card-body">
                 <h5 class="card-title"><a href="@permalink">@title</a></h5>
-                @include('partials.entry-meta')
+                <span class="author-line">@include('partials.entry-meta')</span>
                 <p class="card-text">@excerpt</p>
               </div>
             </div>
