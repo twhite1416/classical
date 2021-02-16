@@ -36,10 +36,13 @@
             position: relative;
 
             .position-box {
+              position: absolute;
+
+              @include media-breakpoint-down(lg) {
+                bottom: 0;
+              }
 
               @include media-breakpoint-up(lg) {
-                position: absolute;
-
                 &.top-right {
                   top: 0;
                   right: 0;

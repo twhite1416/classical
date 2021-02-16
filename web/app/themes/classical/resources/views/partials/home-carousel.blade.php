@@ -1,5 +1,5 @@
 @hasfield('carousel_item') 
-<div id="home-carousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="5000">
+<div id="home-carousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="8000">
   <div class="carousel-inner d-flex align-items-stretch">
     @fields('carousel_item')
     <div class="carousel-item" style="background-image: url(@sub('background_image'))">

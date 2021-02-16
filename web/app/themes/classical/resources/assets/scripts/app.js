@@ -17,10 +17,11 @@ function toggleDropdown (e) {
 }
 
 $(document).ready(() => {
-  $('body')
-    .on('mouseenter mouseleave','.dropdown',toggleDropdown)
-    .on('click', '.dropdown-menu a', toggleDropdown);
-  
+  if (window.innerWidth > 1202) {
+    $('body')
+      .on('mouseenter mouseleave','.dropdown',toggleDropdown)
+      .on('click', '.dropdown-menu a', toggleDropdown);
+  }
   if ($(".carousel-inner").length) {
     $(".carousel-inner .carousel-item").first().addClass("active");  
   }
