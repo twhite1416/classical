@@ -55,7 +55,7 @@
           </div>
           @endposts
 
-          <div class="col-md-lg pt-5 pt-sm-5 pt-md-5 pt-lg-0 pt-xl-0">
+          <div class="col-lg-4 pt-5 pt-sm-5 pt-md-5 pt-lg-0 pt-xl-0">
             <div class="card school">
               <img src="@asset('images/school.jpg')" class="card-img-top" alt="">
               <div class="card-body">

@@ -9,7 +9,7 @@
             <div class="col">
               <h2>The Institute provides donors an opportunity to shape a generation of hearts and minds.</h2>
               <p>New academies can only be created with substantial philanthropic investment: At Great Hearts, we believe that a classical education for the every child, no matter their zip code.</p>
-              <a href="#link" class="btn btn-outline-white" role="button">Support The Institute</a>
+              <a href="/the-institute" class="btn btn-outline-white" role="button">Support The Institute</a>
             </div>
           </div>
         </div>
