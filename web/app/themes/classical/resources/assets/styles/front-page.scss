@@ -13,6 +13,7 @@
 
     &.symposium {
       h5,
+      a,
       .author-line {
         color: map-get($theme-colors, 'light-blue');
       }
@@ -22,6 +23,7 @@
 
     &.leadership {
       h5,
+      a,
       .author-line {
         color: map-get($theme-colors, 'primary');
       }
@@ -31,6 +33,7 @@
 
     &.school {
       h5,
+      a,
       .author-line {
         color: map-get($theme-colors, 'gold');
       }

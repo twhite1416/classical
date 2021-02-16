@@ -45,11 +45,9 @@
                 <img src="@asset('images/leadership.jpg')" class="card-img-top" alt="...">
               @endfield
               <div class="card-body">
-                <div class="card-body">
                 <h5 class="card-title"><a href="@permalink">@title</a></h5>
                 @include('partials.entry-meta')
                 <p class="card-text">@excerpt</p>
-              </div>
               </div>
             </div>
           </div>
@@ -59,7 +57,7 @@
             <div class="card school">
               <img src="@asset('images/school.jpg')" class="card-img-top" alt="">
               <div class="card-body">
-                <h5 class="card-title">Find a Classical Education Academy in your area.</h5>
+                <h5 class="card-title"><a href="/find-a-school">Find a Classical Education Academy in your area.</a></h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 <a href="/find-a-school" class="btn btn-outline-gold" role="button">Find a School</a>
               </div>
