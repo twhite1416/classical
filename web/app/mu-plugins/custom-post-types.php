@@ -93,3 +93,30 @@ add_action( 'init', function() {
   ) );
 
 });
+
+add_action( 'init', function() {
+  register_extended_post_type( 'virtue_magazine', array(
+    # Add the post type to the site's main RSS feed:
+    'show_in_feed' => true,
+    'show_in_rest' => true,
+    'has_archive' => false,
+    'public' => true,
+    'hierarchical' => false,
+    'supports' => array(
+      'title',
+      'editor',
+      'custom-fields',
+      'thumbnail',
+      'page-attributes'
+    ),
+    'taxonomies' => 'category',
+    'rewrite'   => array( 'slug' => 'virtue-magazine' )
+  ), array(
+    # Override the base names used for labels:
+    'singular' => 'Virtue Magazine',
+    'plural'   => 'Virtue Issues',
+    'slug'     => 'virtue-magazine'
+
+  ) );
+
+});

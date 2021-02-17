@@ -54,14 +54,16 @@
           @endposts
 
           <div class="col-lg-4 pt-5 pt-sm-5 pt-md-5 pt-lg-0 pt-xl-0">
+            @group('find_a_school_card_content')
             <div class="card school">
-              <img src="@asset('images/school.jpg')" class="card-img-top" alt="">
+              <img src="@sub('image')" class="card-img-top" alt="@sub('title')">
               <div class="card-body">
-                <h5 class="card-title"><a href="/find-a-school">Find a Classical Education Academy in your area.</a></h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="/find-a-school" class="btn btn-outline-gold" role="button">Find a School</a>
+                <h5 class="card-title"><a href="@sub('internal_link')">@sub('title')</a></h5>
+                <p class="card-text">@sub('content')</p>
+                <a href="@sub('internal_link')" class="btn btn-outline-gold" role="button">@sub('button_text')</a>
               </div>
             </div>
+            @endgroup
           </div>
         </div>
       </div>

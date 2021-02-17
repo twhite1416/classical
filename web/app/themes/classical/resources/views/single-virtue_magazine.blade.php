@@ -2,7 +2,6 @@
   Template Name: Virtue Magazine
   Template Post Type: post, page, virtue_magazine 
 --}}
-
 @include('partials.header')
 
 @include('partials.virtue-header')
@@ -19,13 +18,8 @@
               <div class="col order-12 text-right">
                 @include('partials.virtue-selector')
               </div>
-
-              @query([
-                'post_type' => 'virtue_magazine',
-                'posts_per_page' => 1,
-                'post_status' => 'publish'
-              ])
-              @posts
+              @while(have_posts()) @php(the_post())
+              @set($iid, $post->ID)
               <div class="col">
                 <div class="content">
                   <h2>Issue @field('issue_number') <span class="color-gold">|</span> @field('issue_title')</h2>
@@ -44,12 +38,12 @@
           <div class="col-lg-4">
             <img class="img-fluid" src="@field('issue_image')" />
           </div>
-          @endposts
+          @endwhile
         </div>
       </main>
     </div>
-  </div>
-
+  </div>  
+  
   <div class="single-cards">
     <div class="container">
       <div class="row">

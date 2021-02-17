@@ -7,7 +7,16 @@
         <h3>Subscribing to VIRTUE's mailing list is absolutely free.</h3>
       </div>
       <div class="col-lg-4 col-sm-12 space magazine-image text-center">
-        <img class="img-fluid" src="@asset('images/virtue_mag.png')" />
+        @query([
+          'post_type' => 'virtue_magazine',
+          'post_status' => 'publish',
+          'posts_per_page' => 1,
+          'orderby' => 'date',
+          'order' => 'DESC'
+        ])
+        @posts
+        <img class="img-fluid" src="@field('issue_image')" />
+        @endposts
       </div>
       <div class="col-lg-4 col-sm-12 space">
         @shortcode('[hf_form slug="virtue-newsletter-signup"]')

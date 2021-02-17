@@ -8,11 +8,8 @@
         <strong>@field('department')</strong><br>
         <strong>@field('location')</strong>
       </p>
-      <p class="card-text">{{ App\trunc(get_field('short_description'))}}</p>
+      <p class="card-text">{{ App\trunc(get_field('short_description'))}} <a data-toggle="modal" data-target="#modal-{{ get_the_ID() }}" style="white-space: nowrap" href="@permalink">Read more</a></p>
       <ul class="list-unstyled advisor-links">
-        <li>
-          <a data-toggle="modal" data-target="#modal-{{ get_the_ID() }}" href="@permalink">Full Bio</a>
-        </li>
         @fields('articles')
         <li>
           <a href="@permalink(get_sub_field('article'))">@title(get_sub_field('article'))</a>

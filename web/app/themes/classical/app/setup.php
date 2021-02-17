@@ -57,7 +57,8 @@ add_action('after_setup_theme', function () {
         'nav-walker',
         'nice-search',
         'relative-urls',
-        'js-to-footer'
+        'js-to-footer',
+        'google-analytics' => 'UA-175537030-1'
     ]);
 
     /**

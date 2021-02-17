@@ -11,9 +11,9 @@ nav.navbar {
 
   .navbar-nav {
     .nav-item {
-      &.show {
-        a.nav-link,
-        a.wacky {
+      &.show,
+      &.current-menu-ancestor {
+        a.nav-link {
           color: map-get($theme-colors, 'light-blue');
           border-bottom: 4px solid map-get($theme-colors, 'light-blue');
         }
@@ -52,11 +52,10 @@ nav.navbar {
         font-weight: normal;
         font-size: 1rem;
         background-color: transparent;
+        color: map-get($theme-colors, 'primary');
 
-        a,
-        a:active,
-        &.active {
-          color: map-get($theme-colors, 'primary');
+        &:hover {
+          color: map-get($theme-colors, 'light-blue');
         }
       }
     }

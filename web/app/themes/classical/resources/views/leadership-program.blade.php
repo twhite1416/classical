@@ -21,7 +21,7 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-6">
-        <h2>A thoughtful balance between</h2>
+        <h2><em>A thoughtful balance between</em></h2>
         <p class="large-text">Practical and philosphical</p>
         <p>Great Hearts is launching a school leadership program, entitled Virtue Leadership Program. It will be premised on an Aristotelian understanding of human excellence and the integration of intellectual and moral formation. The aim being to develop practical wisdom, phronesis, through the vicarious exploration of the case study.</p>
         <p><strong>The online four-course sequence (each course being 8 weeks) will span roughly an academic year, culminating in a certificate.</strong></p>
@@ -29,7 +29,7 @@
       <div class="col-lg-6">
         <div class="row">
           <div class="col-lg-6">
-            <h3>Integrated</h3>
+            <h3><em>Integrated</em></h3>
             <p class="medium-text">leadership training</p>
             <p>Upon completion of the Virtue Leadership Program, participants will:</p>
             <ul>
@@ -41,7 +41,7 @@
           </div>
         
           <div class="col-lg-6">
-            <h3>Participant</h3>
+            <h3><em>Participant</em></h3>
             <p class="medium-text">profile</p>
             <p>The ideal candidate for the Virtue Leadership Program is an individual that          aspires to lead and is passionate about the students, school, and the classical philosophy. Program participants are current, emerging, or aspiring leaders of  K-12 institutions who have a minimum of 3 years’ experience.</p>
             <a href="/apex-registration" class="btn btn-outline-primary" role="button">Register Now</a>
@@ -88,7 +88,7 @@
     <div class="row">
       <div class="col-lg-6">
         <p class="large-text">Schedule and tuition</p>
-        <h2>Spring 2021 Cohort</h2>
+        <h2><em>Spring 2021 Cohort</em></h2>
         <p>Our Spring 2021 cohort will begin in February. Participants will participate in one 8-week course per semester and end in Fall, 2023. The program tuition fee is $4,000, which includes all materials needed to participate. For our Spring 2021 cohort, applicants who enroll by the priority deadline of  November 20 will receive a discount of $250. Applications will be reviewed on a  rolling basis with earlier applicants receiving greater consideration for admission.  Final application deadline is December 20, 2020. </p>
       </div>
       <div class="col-lg-6">
