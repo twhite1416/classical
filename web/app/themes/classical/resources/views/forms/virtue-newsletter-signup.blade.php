@@ -23,8 +23,12 @@
         <div class="form-group">
           <label for="virtue-newsletter-signup-INTEREST">Area of Interest</label>
           <select class="form-control" name="INTEREST" id="virtue-newsletter-signup-INTEREST">
-            <option>One</option>
-            <option>Two</option>
+            <option>Mathematics</option>
+            <option>History</option>
+            <option>Literature</option>
+            <option>Science</option>
+            <option>Philosophy</option>
+
           </select>
         </div>
         <div class="form-group">
