@@ -3,3 +3,6 @@
 #/dist
 npm-debug.log
 yarn-error.log
+
+#file
+.DS_Store

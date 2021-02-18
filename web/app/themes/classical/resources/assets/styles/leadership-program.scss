@@ -1,14 +1,17 @@
 .page-template-leadership-program {
-  p.large-text {
+  .large-text {
     font-size: 4.25rem;
     font-weight: bold;
     font-family: $font-family-sans-serif;
     line-height: 1;
     color: map-get($theme-colors, 'primary');
-    @include partial-border-bottom('light-blue', 25%, 4px);
+
+    &.border-after {
+      @include partial-border-bottom('light-blue', 25%, 4px);
+    }
   }
 
-  p.medium-text {
+  .medium-text {
     font-size: 2.5rem;
     font-weight: bold;
     font-family: $font-family-sans-serif;
@@ -44,21 +47,13 @@
   .intro {
     @extend .py-5 !optional;
 
-    h3 {
-      color: map-get($theme-colors, 'light-blue');
-    }
-
     ul {
-      li {
-        color: map-get($theme-colors, 'light-blue');
-        font-weight: bold;
-      }
-    }
+      list-style-type: disc;
+      list-style-position: outside;
+      padding-left: 1rem;
 
-    p {
-      strong {
-        color: map-get($theme-colors, 'light-blue');
-        font-weight: bold;
+      li {
+        margin-bottom: 1rem;
       }
     }
   }
@@ -66,9 +61,21 @@
   .schedule {
     @extend .py-5 !optional;
 
-    h2,
-    h3 {
+    h2 {
       color: map-get($theme-colors, 'light-blue');
+      @include partial-border('light-blue', 25%, 4px);
+    }
+
+    h3,
+    p.course-name {
+      color: map-get($theme-colors, 'light-blue');
+    }
+
+    p.course-name {
+      @extend .h3;
+
+      font-family: $font-family-sans-serif;
+      font-weight: bold;
     }
   }
 

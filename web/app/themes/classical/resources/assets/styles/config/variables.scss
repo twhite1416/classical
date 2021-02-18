@@ -11,6 +11,9 @@ $font-family-nav:        "Arial Narrow", arial, sans-serif;
 $body-color: #363330;
 $white: #fff;
 
+$spacer: 1rem !default;
+$headings-margin-bottom: $spacer !default;
+
 $theme-colors: (
   'primary': #002a6b,
   'gold': #7d694f,

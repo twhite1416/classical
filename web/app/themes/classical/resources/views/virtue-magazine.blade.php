@@ -26,6 +26,7 @@
                 'post_status' => 'publish'
               ])
               @posts
+              @set($iid, get_the_ID())
               <div class="col">
                 <div class="content">
                   <h2>Issue @field('issue_number') <span class="color-gold">|</span> @field('issue_title')</h2>
@@ -44,7 +45,6 @@
           <div class="col-lg-4">
             <img class="img-fluid" src="@field('issue_image')" />
           </div>
-          @endposts
         </div>
       </main>
     </div>
@@ -59,13 +59,35 @@
             <?php foreach( $featured_posts as $p ):
               setup_postdata($p); ?>
               @include('partials.single-card', $p)
-            <?php endforeach; wp_reset_postdata(); ?>
+            <?php endforeach; ?>
           <?php endif; ?>
       </div>
     </div>
   </div>
-
-  @include('partials.profile-module')
+  <?php
+    $profile = get_field('profile_article');
+    if( $profile ): ?>
+      <div class="profile-module py-5">
+        <div class="container">
+          <?php foreach( $profile as $d ):
+        setup_postdata($d); ?>
+          <div class="row align-items-center">
+            @if(get_field('featured_image', $d->ID))
+              <div class="col-lg-4 text-center">
+                <img src="{{get_field('featured_image', $d->ID)}}" alt="{{get_the_title($d->ID)}}" class="img-fluid rounded-circle" />
+              </div>
+            @endif
+            <div class="col-lg-8">
+              <h2>{{get_the_title($d->ID)}}</h2>
+              <p>{{App\trunc(strip_tags(get_the_content($d->ID)))}}</p>
+              <a href="{{get_the_permalink($d)}}" class="btn btn-outline-primary" role="button">Read More</a>
+            </div>
+          </div>
+          <?php endforeach; wp_reset_postdata(); ?>
+        </div>
+      </div> 
+    <?php endif; ?>
 </div>
+@endposts
 
 @include('partials.footer')
