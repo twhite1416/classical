@@ -2,7 +2,7 @@
   <span>{{ __('By', 'sage') }}</span>
     @if(get_field('author'))
       @title( get_field('author')->ID)
-    @elseif(get_field('custom_name'))
+    @elseif(get_field('custom_author_entry'))
       @group('custom_author_entry')
         @sub('custom_name')
       @endgroup
