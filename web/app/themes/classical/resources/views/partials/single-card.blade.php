@@ -2,8 +2,6 @@
   <div class="card single-card" style="">
     @if(get_field('featured_image', $post->ID))
       <img src="{{get_field('featured_image', $post->ID)}}" alt="{{get_the_title($post->ID)}}" class="@php($class) img-fluid" />
-    @else
-      <img src="@asset('images/post_image.jpg')" alt="@php(get_the_title($post->ID)" class="@php($class) img-fluid" />
     @endfield
     <div class="card-body">
       <h3 class="card-title"><a href="{{get_the_permalink($post->ID)}}">{!! get_the_title($post->ID) !!}</a></h3>

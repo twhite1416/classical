@@ -11,7 +11,7 @@ if( $profile ): ?>
             <img src="{{get_field('featured_image', $d->ID)}}" alt="{{get_the_title($d->ID)}}" class="img-fluid rounded-circle" />
           </div>
         @endif
-        <div class="col-lg-8">
+        <div class="col">
           <h2>{{get_the_title($d->ID)}}</h2>
           <p>{{App\trunc(strip_tags(get_the_content($d->ID)))}}</p>
           <a href="{{get_the_permalink($d)}}" class="btn btn-outline-primary" role="button">Read More</a>

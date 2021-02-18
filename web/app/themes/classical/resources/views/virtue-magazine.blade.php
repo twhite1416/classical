@@ -16,7 +16,7 @@
         <div class="row justify-content-center">
           <div class="col-lg-8">
             <div class="row">
-              <div class="col order-12 text-right">
+              <div class="col-lg-4 order-12 text-right">
                 @include('partials.virtue-selector')
               </div>
 
@@ -30,12 +30,12 @@
               <div class="col">
                 <div class="content">
                   <h2>Issue @field('issue_number') <span class="color-gold">|</span> @field('issue_title')</h2>
-                  <p>@content</p>
                 </div>
               </div>
             </div>
             <div class="row">
               <div class="col">
+                <p>@content</p>
                 <div class="form pt-3">
                   @shortcode('[hf_form slug="virtue-newsletter-signup"]')
                 </div>
@@ -90,4 +90,5 @@
 </div>
 @endposts
 
-@include('partials.footer')
+@include('partials.donate-module')
+@include('partials.footer-bare')

@@ -30,7 +30,9 @@
     <div class="tab-pane fade show active" id="nav-advisors" role="tabpanel" aria-labelledby="nav-advisors-tab">
       <div class="row align-items-stretch">
         @query([
-          'post_type' => 'advisory_council'
+          'post_type' => 'advisory_council',
+          'posts_per_page' => -1,
+          'post_status' => 'publish'
         ])
 
         @posts
@@ -41,7 +43,9 @@
     <div class="tab-pane fade" id="nav-fellows" role="tabpanel" aria-labelledby="nav-fellows-tab">
       <div class="row">
         @query([
-          'post_type' => 'fellows'
+          'post_type' => 'fellows',
+          'posts_per_page' => -1,
+          'post_status' => 'publish'
         ])
 
         @posts
