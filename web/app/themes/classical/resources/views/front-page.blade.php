@@ -40,7 +40,7 @@
           <div class="col-lg-4 pt-5 pt-sm-5 pt-md-5 pt-lg-0 pt-xl-0">
             <div class="card leadership">
               @hasfield('featured_image')
-                @include('partials.contant-single-image')
+                @include('partials.content-single-image')
               @else
                 <img src="@asset('images/leadership.jpg')" class="card-img-top" alt="...">
               @endfield
