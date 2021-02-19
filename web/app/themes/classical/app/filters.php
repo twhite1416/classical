@@ -12,7 +12,7 @@ namespace App;
  * @return string
  */
 add_filter('excerpt_more', function () {
-    return '';
+    return '...';
 });
 
 // Changing excerpt length

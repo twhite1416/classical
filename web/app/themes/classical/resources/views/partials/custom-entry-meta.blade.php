@@ -1,11 +1,14 @@
+@group('custom_author_entry')
+  @set($cname, get_sub_field('custom_name'))
+  @set($cimage, get_sub_field('custom_name'))
+@endgroup
+
 <p class="byline author vcard">
   <span>{{ __('By', 'sage') }}</span>
     @if(get_field('author'))
-      @title( get_field('author')->ID)
-    @elseif(get_field('custom_author_entry'))
-      @group('custom_author_entry')
-        @sub('custom_name')
-      @endgroup
+      @title( get_field('author'))
+    @elseif(isset($cname) && !empty($cname))
+      {{$cname}}
     @else
       @author()
     @endif

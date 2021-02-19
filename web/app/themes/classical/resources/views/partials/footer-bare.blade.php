@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row align-items-center">
       <div class="col-lg-3 pb-3">
-        @svg('images/ice_logo_footer.svg', 'img-fluid')
+        <img src="@asset('images/ice_logo_footer.svg')" class="img-fluid" />
       </div>
       <div class="col-lg-4 pb-3 social-media">
         @hasoption('accounts')

@@ -10,7 +10,7 @@
       <div class="card-body">
         <a href="@permalink"><h5 class="card-title">@title</h5></a>
         @include('partials.custom-entry-meta')
-        <p class="card-text">@excerpt</p>
+        <p class="card-text">{{ get_the_excerpt()}} <a style="white-space: nowrap" href="@permalink">Read more</a></p>
       </div>
     </div>
   </div>

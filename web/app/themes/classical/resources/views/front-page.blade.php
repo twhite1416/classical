@@ -25,7 +25,7 @@
               <div class="card-body">
                 <h5 class="card-title"><a href="@permalink">@title</a></h5>
                 <span class="author-line">@include('partials.entry-meta')</span>
-                <p class="card-text">@excerpt</p>
+                <p class="card-text">{{ get_the_excerpt() }} <a style="white-space: nowrap" href="@permalink">Read more</a></p>
               </div>
             </div>
           </div>
@@ -47,7 +47,7 @@
               <div class="card-body">
                 <h5 class="card-title"><a href="@permalink">@title</a></h5>
                 <span class="author-line">@include('partials.entry-meta')</span>
-                <p class="card-text">@excerpt</p>
+                <p class="card-text">{{ get_the_excerpt()}} <a style="white-space: nowrap" href="@permalink">Read more</a></p>
               </div>
             </div>
           </div>
@@ -59,7 +59,7 @@
               <img src="@sub('image')" class="card-img-top" alt="@sub('title')">
               <div class="card-body">
                 <h5 class="card-title"><a href="@sub('internal_link')">@sub('title')</a></h5>
-                <p class="card-text">@sub('content')</p>
+                <p class="card-text">@sub('content') <a style="white-space: nowrap" href="@permalink">Read more</a></p>
                 <a href="@sub('internal_link')" class="btn btn-outline-gold" role="button">@sub('button_text')</a>
               </div>
             </div>

@@ -18,11 +18,15 @@
     }
 
     .advisor-links {
-      a {
-        color: map-get($theme-colors, 'gold');
-        font-family: $font-family-sans-serif;
-        text-decoration: underline;
-        font-weight: bold;
+      li {
+        margin-bottom: 1rem;
+
+        a {
+          color: map-get($theme-colors, 'gold');
+          font-family: $font-family-sans-serif;
+          text-decoration: underline;
+          font-weight: bold;
+        }
       }
     }
   }
