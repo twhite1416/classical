@@ -1,11 +1,11 @@
-@mixin partial-border($color, $width, $height:3px) {
+@mixin partial-border($color, $width, $height:5px) {
   position: relative;
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
 
   &::after {
     content: '';
-    width: $width;
+    width: 150px;
     height: $height;
     background-color: map-get($theme-colors, $color);
     position: absolute;
@@ -15,7 +15,7 @@
 
   &::before {
     content: '';
-    width: $width;
+    width: 150px;
     height: $height;
     background-color: map-get($theme-colors, $color);
     position: absolute;
@@ -24,13 +24,13 @@
   }
 }
 
-@mixin partial-border-bottom($color, $width, $height:3px) {
+@mixin partial-border-bottom($color, $width, $height:5px) {
   position: relative;
   margin-bottom: 2.5rem;
 
   &::after {
     content: '';
-    width: $width;
+    width: 150px;
     height: $height;
     background-color: map-get($theme-colors, $color);
     position: absolute;

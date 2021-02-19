@@ -28,8 +28,8 @@
         <p class="large-text border-after">Why APEX?</p>
         <ul>
           <li>The APEX leadership program is designed to help you to realize your leadership potential and to become an Exemplary School Leader.</li>
-          <li>APEX offers a unique on-line case-study approach to learning, that combines the profundity of classical wisdom with the power of modern management techniques.</li>
-          <li>Unlike standard leadership programs, APEX integrates the nuts and bolts of school management with a virtue-focused, Aristotelian inspired curriculum.</li>
+          <li>APEX offers a unique online case-study approach to learning, that combines the profundity of classical wisdom with the power of modern management techniques.</li>
+          <li>Unlike standard leadership programs, APEX integrates the nuts and bolts of school management with a virtue-focused, Aristotelian-inspired curriculum.</li>
           <li>Actualize your potential and help build the community of classical schools.</li>
         </ul>
       </div>
@@ -42,7 +42,7 @@
               <li>Learn to build and manage teams and people.</li>
               <li>Acquire the necessary managerial skills needed to run a school.</li>
               <li>Master the fundamentals of strategic marketing, school governance, enrollment, hiring, and community relations.</li>
-              <li>Learn how to build and nurture a classically based, virtue-centered school culture.</li>
+              <li>Learn how to build and nurture a classically-based, virtue-centered school culture.</li>
               <li>Join a network and community of classical school leaders.</li>
             </ul>
           </div>
@@ -50,8 +50,8 @@
           <div class="col-lg-6">
             <p class="medium-text">Who is<br>APEX for?</p>
             <ul>
-              <li>Teachers who aspire to become school leaders</li>
-              <li>Current leaders or administrators who want to advance their career</li>
+              <li>Teachers who aspire to become school leaders.</li>
+              <li>Current leaders or administrators who want to advance their career.</li>
             </ul>
             @group('registration_url')
               <a href="@sub('link')" class="btn btn-outline-primary" role="button">@sub('button_text')</a>
@@ -75,7 +75,7 @@
       <div class="col-lg-3 col-md-6 col-sm-8 col-12">
         <div class="lp-icon">
           <img src="@asset('images/icon_portfolio.svg')" />
-          <p>Professional portfolio — build all the tools you will need to succeed as a school leader</p>
+          <p>Professional portfolio - build all the tools you will need to succeed as a school leader</p>
         </div>
       </div>
       <div class="col-lg-3 col-md-6 col-sm-8 col-12">
@@ -99,7 +99,7 @@
     <div class="row">
       @group('schedule_and_registration')
       <div class="col-lg-6">
-        <p class="large-text">Schedule and registration</p>
+        <p class="large-text">Schedule and Registration</p>
         <h2>@sub('subtitle')</h2>
         <p>@sub('content')</p>
       </div>

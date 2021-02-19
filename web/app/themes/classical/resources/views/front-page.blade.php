@@ -59,7 +59,7 @@
               <img src="@sub('image')" class="card-img-top" alt="@sub('title')">
               <div class="card-body">
                 <h5 class="card-title"><a href="@sub('internal_link')">@sub('title')</a></h5>
-                <p class="card-text">@sub('content') <a style="white-space: nowrap" href="@permalink">Read more</a></p>
+                <p class="card-text">@sub('content')</p>
                 <a href="@sub('internal_link')" class="btn btn-outline-gold" role="button">@sub('button_text')</a>
               </div>
             </div>
