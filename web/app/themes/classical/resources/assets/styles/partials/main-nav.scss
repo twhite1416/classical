@@ -35,6 +35,10 @@ nav.navbar {
           border-bottom: 4px solid map-get($theme-colors, 'light-blue');
         }
 
+        &:focus {
+          outline: none;
+        }
+
         &::after {
           display: none;
         }

@@ -10,18 +10,18 @@
 @section('content')
   @while(have_posts()) @php(the_post())
   <nav id="fellows-advisors-nav">
-    <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+    <div class="nav nav-tabs justify-content-center flex-column flex-lg-row" id="nav-tab" role="tablist">
       @group('advisory_council_tab')
-      <a class="nav-link active col-5 space" id="nav-advisors-tab" data-toggle="tab" href="#nav-advisors" role="tab" aria-controls="nav-advisors" aria-selected="true">
+      <a class="nav-link active col-lg-5 space" id="nav-advisors-tab" data-toggle="tab" href="#nav-advisors" role="tab" aria-controls="nav-advisors" aria-selected="true">
         <h2>@sub('tab_title')</h2>
-        <p>@sub('tab_description')</p>
+        <p class="nav-content">@sub('tab_description')</p>
       </a>
       @endgroup
 
       @group('fellows_tab')
-      <a class="nav-link col-5 space" id="nav-fellows-tab" data-toggle="tab" href="#nav-fellows" role="tab" aria-controls="nav-fellows" aria-selected="false">
+      <a class="nav-link col-lg-5 space" id="nav-fellows-tab" data-toggle="tab" href="#nav-fellows" role="tab" aria-controls="nav-fellows" aria-selected="false">
         <h2>@sub('tab_title')</h2>
-        <p>@sub('tab_description')</p>
+        <p class="nav-content">@sub('tab_description')</p>
       </a>
       @endgroup
     </div>
