@@ -19,11 +19,10 @@ function toggleDropdown (e) {
 
 $(document).ready(() => {
   //swap hover for clicks for mobile nav
-  if (window.innerWidth > 1202) {
-    $('body')
-      .on('mouseenter mouseleave','.dropdown',toggleDropdown)
-      .on('click', '.dropdown-menu a', toggleDropdown);
-  }
+  
+  $('body')
+    .on('click', '.dropdown-menu a', toggleDropdown);
+  
 
   //set the first carousel item active
   if ($(".carousel-inner").length) {

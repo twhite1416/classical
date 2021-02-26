@@ -2,7 +2,7 @@
   <div class="card advisor-card">
     <div class="card-body">
       
-      <img src="@field('image')" class="advisor-img rounded-circle mx-auto d-block" alt="@title">
+      <img src="@field('image')" class="advisor-img rounded-circle mx-auto d-block" alt="@title Image">
       <h3 class="card-title">@title</h3>
       <p>
         <strong>@field('department')</strong><br>

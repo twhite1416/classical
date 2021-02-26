@@ -15,7 +15,7 @@
           'order' => 'DESC'
         ])
         @posts
-        <img class="img-fluid" src="@field('issue_image')" />
+        <img class="img-fluid" alt="Virtue Magaizine Issue @field('issue_number')" src="@field('issue_image')" />
         @endposts
       </div>
       <div class="col-lg-4 col-sm-12 space">

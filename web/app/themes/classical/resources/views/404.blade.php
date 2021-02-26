@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+  @include('partials.content-single-image-header')
   @include('partials.page-header')
 
   @if (! have_posts())
