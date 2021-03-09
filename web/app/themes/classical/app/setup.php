@@ -169,3 +169,23 @@ add_action('init', function () {
     ]);
 });
 
+/**
+ * Register the options page.
+ *
+ * @return void
+ */
+add_action('init', function () {
+    
+    if (!function_exists('acf_add_options_page')) {
+        return;
+    }
+    acf_add_options_page([
+        'page_title'    => 'VIRTUE Module Content',
+        'menu_title'    => 'VIRTUE CTA',
+        'menu_slug'     => 'virtue_content',
+        'capability'    => 'edit_posts',
+        'parent_slug'   => '',
+        'icon_url'      => 'dashicons-editor-paragraph'
+    ]);
+});
+

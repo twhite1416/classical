@@ -2,7 +2,7 @@
   <div class="col magazine-form">
     <div class="row">
       <div class="col">
-        <h3>Sign-up today to get your first copy and join 25,000+ teachers, leaders, and friends of K-12 Classical.</h3>
+        <h3>@option('form_cta_vm')</h3>
       </div>
     </div>
     <div class="row">
@@ -22,7 +22,7 @@
         </div>
         <div class="form-group">
           <label for="virtue-newsletter-signup-INTEREST">Area of Interest</label>
-          <input class="form-control" name="INTEREST" id="virtue-newsletter-signup-INTEREST" type="text" list="interests">
+          <input class="form-control" name="INTEREST" id="virtue-newsletter-signup-INTEREST" type="text" list="interests" placeholder="Select below or enter your own">
           <datalist id="interests">
             <option>English & Composition</option>
             <option>Fine Arts</option>            
