@@ -8,8 +8,8 @@
           <div class="row">
             <div class="col">
               <h2>The Institute provides donors an opportunity to shape a generation of hearts and minds.</h2>
-              <p>New academies can only be created with substantial philanthropic investment. At GreatHearts, we believe that a classical education is for every child, no matter their zip code.</p>
-              <a target="_blank" href="https://greatheartsfoundation.configio.com/moneyrequest?id=3" class="btn btn-outline-white" role="button">Support The Institute</a>
+              <p>New academies can only be created with substantial philanthropic investment. At Great Hearts, we believe that a classical education is for every child, no matter their zip code.</p>
+              <a target="_blank" href="https://greatheartsfoundation.configio.com/moneyrequest?id=3" class="btn btn-outline-white" role="button">Support the Institute</a>
             </div>
           </div>
         </div>

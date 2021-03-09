@@ -36,7 +36,7 @@
             </div>
           </div>
           <div class="col-lg-4">
-            <img class="img-fluid" src="@field('issue_image')" />
+            <img alt="VIRTUE Magazine" class="img-fluid" src="@field('issue_image')" />
           </div>
           @endwhile
         </div>
