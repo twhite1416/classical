@@ -23,16 +23,13 @@
         <div class="form-group">
           <label for="virtue-newsletter-signup-INTEREST">Area of Interest</label>
           <input class="form-control" name="INTEREST" id="virtue-newsletter-signup-INTEREST" type="text" list="interests" placeholder="Select below or enter your own">
+          @hasoption('areas_of_interest_vm')
           <datalist id="interests">
-            <option>English & Composition</option>
-            <option>Fine Arts</option>            
-            <option>History</option>
-            <option>Languages, Classical & Modern</option>
-            <option>Literature & Poetry</option>
-            <option>Mathematics</option>
-            <option>Philosophy</option>
-            <option>Science</option>
+            @options('areas_of_interest_vm')
+              <option>@sub('option_vm')</option>
+            @endoptions
           </datalist>
+          @endoption
         </div>
         <div class="form-group">
           <button type="submit" class="btn btn-outline-primary" role="button">Submit</button>
