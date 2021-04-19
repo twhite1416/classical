@@ -21,3 +21,10 @@ $theme-colors: (
   'light-blue': #2494d4,
   'bg-grey': rgba(125, 75, 109, 5%),
 );
+
+//Fix for WC overriding classnames
+.woocommerce {
+  .col-1, .col-2 {
+    max-width:none;
+  }
+}
