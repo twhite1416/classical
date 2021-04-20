@@ -41,6 +41,17 @@ global $post;
       <li class="job-location">
         <?php the_job_location( false ); ?>
       </li>
+
+      
+      <?php $cats = wpjm_get_the_job_categories(); ?>
+      <?php if ( ! empty( $cats ) ) : foreach ( $cats as $cat ) : ?>
+        <li class="job-category">
+          <?php echo esc_html( $cat->name ); ?>
+        </li>
+      <?php endforeach; endif; ?>
+    
+      
+
       <?php if ( get_option( 'job_manager_enable_types' ) ) { ?>
         <?php $types = wpjm_get_the_job_types(); ?>
         <?php if ( ! empty( $types ) ) : foreach ( $types as $type ) : ?>

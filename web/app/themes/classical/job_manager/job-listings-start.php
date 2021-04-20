@@ -26,8 +26,9 @@ if ( ! defined( 'ABSPATH' ) ) {
   </div>
 </div>
 
-<div class="container job-listings-container">
-  <div class="row">
-    <div class="col-lg-10 mx-auto">
-      <ul class="job_listings">
+<div class="job-listings-container-bg">
+  <div class="container job-listings-container">
+    <div class="row">
+      <div class="col-lg-10 mx-auto">
+        <ul class="job_listings">
 

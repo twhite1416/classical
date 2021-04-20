@@ -1,3 +1,4 @@
+.jqvmap-label,.jqvmap-pin{pointer-events:none}.jqvmap-label{position:absolute;display:none;border-radius:3px;background:#292929;color:#fff;font-family:sans-serif,Verdana;font-size:smaller;padding:3px}.jqvmap-zoomin,.jqvmap-zoomout{position:absolute;left:10px;border-radius:3px;background:#000;padding:3px;color:#fff;width:10px;height:10px;cursor:pointer;line-height:10px;text-align:center}.jqvmap-zoomin{top:10px}.jqvmap-zoomout{top:30px}.jqvmap-region{cursor:pointer}.jqvmap-ajax_response{width:100%;height:500px}
 @charset "UTF-8";
 /** Config */
 /**
@@ -8240,6 +8241,7 @@ footer.site-footer {
 .pt-5, .blog .main, .page-template-find-a-school .main, .page-template-fellows-advisors .main,
 .py-5,
 .carousel .carousel-inner .carousel-item,
+.single-job_listing .content-bg,
 .single-post .content-bg,
 .page .content-bg,
 .papers-template-default .content-bg,
@@ -8260,6 +8262,7 @@ footer.site-footer {
 .pb-5, .carousel .carousel-inner, .page-template-leadership-program .lp-header, .home-cards,
 .py-5,
 .carousel .carousel-inner .carousel-item,
+.single-job_listing .content-bg,
 .single-post .content-bg,
 .page .content-bg,
 .papers-template-default .content-bg,
@@ -11077,7 +11080,7 @@ h5 {
 
 .job-header {
   padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-bottom: 0;
 }
 
 .blue-bar {
@@ -11085,12 +11088,42 @@ h5 {
   background-color: #002a6b;
 }
 
+div.job_listings .job-listings-container-bg {
+  background-color: #FFF;
+  width: 100%;
+}
 div.job_listings .job-listings-container {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
 div.job_listings form.job_filters {
   margin-bottom: 3rem;
+  background: none;
+}
+div.job_listings form.job_filters .search_jobs {
+  padding: 0;
+}
+div.job_listings form.job_filters .search_jobs .search_keywords {
+  width: 100%;
+  padding-right: 0;
+}
+div.job_listings form.job_filters label {
+  color: #7d694f;
+}
+div.job_listings form.job_filters input,
+div.job_listings form.job_filters select,
+div.job_listings form.job_filters textarea,
+div.job_listings form.job_filters span.select2 {
+  border-radius: 0;
+  background-color: transparent;
+  border: 1px solid #7d694f;
+  color: #7d694f;
+  font-weight: bold;
+}
+div.job_listings form.job_filters .select2-selection {
+  border: none;
+  padding-left: 12px;
+  padding-right: 12px;
 }
 div.job_listings ul.job_listings {
   border: none;
@@ -11134,6 +11167,22 @@ div.job_listings ul.job_listings li.job_listing a ul.meta li {
 }
 div.job_listings ul.job_listings li.job_listing a ul.meta li:last-child() {
   border-bottom: none;
+}
+
+.single-job_listing .content-bg {
+  background-color: #fff;
+}
+.single-job_listing .job_application .application_button {
+  box-shadow: none !important;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.5;
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  outline: 0;
+}
+.single-job_listing .virtue-magazine-module {
+  display: none;
 }
 
 /** Partials */
@@ -11324,6 +11373,10 @@ footer.site-footer {
 footer.site-footer .social-media a {
   color: #fff;
   text-decoration: none;
+}
+
+header.banner {
+  background-color: #FFF;
 }
 
 nav.navbar {

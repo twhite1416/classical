@@ -3,7 +3,9 @@
  */
 import 'jquery';
 import 'bootstrap';
-import './helpers/fontawesome'
+import './helpers/fontawesome';
+import './jquery.vmap.min.js';
+import './jquery.vmap.usa.js';
 
 //Navbar helper
 function toggleDropdown (e) {
@@ -39,4 +41,32 @@ $(document).ready(() => {
       return false;
     });
   }
+
+  $('#vmap').vectorMap({
+    map: 'usa_en',
+    backgroundColor: '#FFF',
+    borderColor: '#FFF',
+    borderOpacity: 1,
+    borderWidth: 1,
+    color: '#ededed',
+    enableZoom: false,
+    hoverColor: '#ccc',
+    hoverOpacity: null,
+    normalizeFunction: 'linear',
+    scaleColors: ['#b6d6ff', '#005ace'],
+    selectedColor: '#ccc',
+    selectedRegions: null,
+    showTooltip: true,
+    onRegionClick: function(element, code, region)
+    {
+      $('input[name="search_keywords"]').val(region).trigger('change');
+      
+//         var message = 'You clicked "'
+//             + region
+//             + '" which has the code: '
+//             + code.toUpperCase();
+// 
+//         console.log(message);
+    }
+    });
 });

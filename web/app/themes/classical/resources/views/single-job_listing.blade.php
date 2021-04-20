@@ -1,4 +1,4 @@
-@extends('layouts.job')
+@extends('layouts.app')
 
 @section('custom-header')
   @include('partials.color-header')
@@ -18,11 +18,7 @@
 
           <div class="entry-content">
             @php(the_content())
-          </div>
-
-          
-
-          @php(comments_template())
+          </div>         
         </article>
       </div>
     </div>
