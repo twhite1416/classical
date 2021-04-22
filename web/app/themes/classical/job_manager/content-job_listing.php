@@ -20,48 +20,56 @@ global $post;
 ?>
 <li <?php job_listing_class(); ?> data-longitude="<?php echo esc_attr( $post->geolocation_long ); ?>" data-latitude="<?php echo esc_attr( $post->geolocation_lat ); ?>">
   <a href="<?php the_job_permalink(); ?>">
-    <?php the_company_logo(); ?>
-    <div class="position">
-      <div class="company">
-        <h2><?php the_company_name( '<strong>', '</strong> ' ); ?></h2>
-        <h3><?php wpjm_the_job_title(); ?></h3>
-        <?php $desc = wpjm_get_the_job_description(); ?>
-        <?= App\trunc($desc, 240)?>
-        <div class="row">
-          <div class="col">
-            <span class="read-more">Read More</span>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-2 d-none d-lg-block">
+          <?php the_company_logo(); ?>
+        </div>
+        <div class="col-lg-7 col-sm-12">
+          <div class="position">
+            <div class="company">
+              <h2><?php the_company_name( '<strong>', '</strong> ' ); ?></h2>
+              <h3><?php wpjm_the_job_title(); ?></h3>
+              <?php $desc = wpjm_get_the_job_description(); ?>
+              <?= App\trunc($desc, 240)?>
+              <div class="row">
+                <div class="col">
+                  <span class="read-more">Read More</span>
+                </div>
+              </div>
+            </div>      
           </div>
         </div>
+        <div class="col-lg-3 col-sm-12">
+          <ul class="meta">
+            <?php do_action( 'job_listing_meta_start' ); ?>
+            <li class="job-location">
+              <?php the_job_location( false ); ?>
+            </li>
+
+            
+            <?php $cats = wpjm_get_the_job_categories(); ?>
+            <?php if ( ! empty( $cats ) ) : foreach ( $cats as $cat ) : ?>
+              <li class="job-category">
+                <?php echo esc_html( $cat->name ); ?>
+              </li>
+            <?php endforeach; endif; ?>
+          
+            
+
+            <?php if ( get_option( 'job_manager_enable_types' ) ) { ?>
+              <?php $types = wpjm_get_the_job_types(); ?>
+              <?php if ( ! empty( $types ) ) : foreach ( $types as $type ) : ?>
+                <li class="job-type <?php echo esc_attr( sanitize_title( $type->slug ) ); ?>"><?php echo esc_html( $type->name ); ?></li>
+              <?php endforeach; endif; ?>
+            <?php } ?>
+
+            <li class="date"><?php echo date("F, Y", strtotime(get_the_job_publish_date())) ?></li>
+
+            <?php do_action( 'job_listing_meta_end' ); ?>
+          </ul>
+        </div>
       </div>
-
-      
     </div>
-    <ul class="meta">
-      <?php do_action( 'job_listing_meta_start' ); ?>
-      <li class="job-location">
-        <?php the_job_location( false ); ?>
-      </li>
-
-      
-      <?php $cats = wpjm_get_the_job_categories(); ?>
-      <?php if ( ! empty( $cats ) ) : foreach ( $cats as $cat ) : ?>
-        <li class="job-category">
-          <?php echo esc_html( $cat->name ); ?>
-        </li>
-      <?php endforeach; endif; ?>
-    
-      
-
-      <?php if ( get_option( 'job_manager_enable_types' ) ) { ?>
-        <?php $types = wpjm_get_the_job_types(); ?>
-        <?php if ( ! empty( $types ) ) : foreach ( $types as $type ) : ?>
-          <li class="job-type <?php echo esc_attr( sanitize_title( $type->slug ) ); ?>"><?php echo esc_html( $type->name ); ?></li>
-        <?php endforeach; endif; ?>
-      <?php } ?>
-
-      <li class="date"><?= date("F, Y", strtotime(get_the_job_publish_date())) ?></li>
-
-      <?php do_action( 'job_listing_meta_end' ); ?>
-    </ul>
   </a>
 </li>

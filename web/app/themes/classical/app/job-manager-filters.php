@@ -41,3 +41,18 @@ function done_publish_job( $job_id ) {
   }
 }
 add_action( 'job_manager_job_submitted', 'done_publish_job' );
+
+add_filter( 'job_manager_default_company_logo', 'smyles_custom_job_manager_logo' );
+
+function smyles_custom_job_manager_logo( $logo_url ){
+
+  // Change the value below to match the filename of the custom logo you want to use
+  // Place the file in a /images/ directory in your child theme's root directory.
+  // The example provided assumes "/images/custom_logo.png" exists in your child theme
+  $filename = 'blank.png';
+  
+  $logo_url = get_stylesheet_directory_uri() . '/resources/assets/images/' . $filename;
+  
+  return $logo_url;
+  
+}

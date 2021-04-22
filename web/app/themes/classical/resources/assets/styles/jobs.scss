@@ -74,12 +74,17 @@ div.job_listings {
       a {
         color: #000;
         img.company_logo {
-          width: 78px;
+          width: 100%;
           height: auto;
+          position: relative;
+          left: 0;
+          float: none;
+          margin-right: 0;
         }
         .position {
-          padding-left: 80px;
-
+          padding-left: 0;
+          width: 100%;
+          float: none;
           .company {
             h2 {
               color: map-get($theme-colors, 'gold');
@@ -99,6 +104,9 @@ div.job_listings {
           }
         }
         ul.meta {
+          float: none;
+          padding-left: 0;
+          width: 100%;
           li {
             padding: 1rem 0;
             text-align: left;

@@ -74,11 +74,11 @@ global $job_manager;
 			<input type="hidden" name="job_id" value="<?php echo esc_attr( $job_id ); ?>" />
 			<input type="hidden" name="step" value="<?php echo esc_attr( $step ); ?>" />
       <button type="submit" name="submit_job" class="btn btn-outline-primary" role="button"><?php echo esc_attr( $submit_button_text ); ?></button>
-			<?php
+			<?php /*
 			if ( isset( $can_continue_later ) && $can_continue_later ) {
 				echo '<button type="submit" name="save_draft" class="btn btn-outline-gold save_draft ml-3" formnovalidate />Save Draft</Button>';
 			}
-			?>
+			*/?>
 			<span class="spinner" style="background-image: url(<?php echo esc_url( includes_url( 'images/spinner.gif' ) ); ?>);"></span>
 		</p>
 
