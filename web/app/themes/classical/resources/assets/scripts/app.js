@@ -60,13 +60,6 @@ $(document).ready(() => {
     onRegionClick: function(element, code, region)
     {
       $('input[name="search_keywords"]').val(region).trigger('change');
-      
-//         var message = 'You clicked "'
-//             + region
-//             + '" which has the code: '
-//             + code.toUpperCase();
-// 
-//         console.log(message);
     }
     });
 });

@@ -21,7 +21,7 @@ do_action( 'job_manager_job_filters_before', $atts );
 ?>
 <div class="container">
   <div class="row">
-    <div class="col-lg-6">
+    <div class="col-lg-5">
       <form id="job_filters_form" class="job_filters magazine-form">
         <?php do_action( 'job_manager_job_filters_start', $atts ); ?>
 

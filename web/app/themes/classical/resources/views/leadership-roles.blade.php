@@ -22,7 +22,7 @@
                 <p>If you are interested in posting a job to this board select the <a href="/post-a-job">Post a Job</a> button below and follow the instructions.</p>
               </div>
               <div class="col-lg-7">
-                <div id="vmap" style="width: 600px; height: 400px;"></div>
+                <div id="vmap" style="width: 100%; height: 400px;"></div>
               </div>
             </div>
           </header>

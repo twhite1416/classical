@@ -36,6 +36,10 @@ div.job_listings {
       }
     }
 
+    ul.job_types {
+      border-top: none;
+    }
+
     label {
       color: map-get($theme-colors, 'gold');
     }
@@ -129,7 +133,11 @@ div.job_listings {
       outline: 0;
     }
   }
+}
 
+body.post-a-job,
+body.job-dashboard,
+body.single-job_listing {
   .virtue-magazine-module {
     display: none;
   }

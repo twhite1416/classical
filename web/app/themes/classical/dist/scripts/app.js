@@ -80,12 +80,7 @@ $(document).ready(function () {
     selectedRegions: null,
     showTooltip: true,
     onRegionClick: function onRegionClick(element, code, region) {
-      $('input[name="search_keywords"]').val(region).trigger('change'); //         var message = 'You clicked "'
-      //             + region
-      //             + '" which has the code: '
-      //             + code.toUpperCase();
-      // 
-      //         console.log(message);
+      $('input[name="search_keywords"]').val(region).trigger('change');
     }
   });
 });

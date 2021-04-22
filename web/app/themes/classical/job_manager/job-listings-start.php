@@ -18,9 +18,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <div class="blue-bar">
   <div class="container">
-    <div class="row">
-      <div class="col text-right">
+    <div class="row justify-content-end">
+      <div class="col-auto">
         <a href="/post-a-job" class="btn btn-outline-white" role="button">Post a Job</a>
+      </div>
+      <div class="col-auto">
+        <a href="/job-dashboard" class="btn btn-outline-white" role="button">Remove or Update a Job</a>
       </div>
     </div>
   </div>

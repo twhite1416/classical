@@ -29,7 +29,8 @@ require $composer;
 |
 */
 
-collect(['helpers', 'setup', 'filters', 'admin', 'wp_bootstrap_navwalker'])
+collect(['helpers', 'setup', 'filters', 'admin', 'wp_bootstrap_navwalker',
+'job-manager-filters'])
     ->each(function ($file) {
         $file = "app/{$file}.php";
 

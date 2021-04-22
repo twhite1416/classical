@@ -11107,6 +11107,9 @@ div.job_listings form.job_filters .search_jobs .search_keywords {
   width: 100%;
   padding-right: 0;
 }
+div.job_listings form.job_filters ul.job_types {
+  border-top: none;
+}
 div.job_listings form.job_filters label {
   color: #7d694f;
 }
@@ -11182,6 +11185,15 @@ div.job_listings ul.job_listings li.job_listing a ul.meta li:last-child() {
   outline: 0;
 }
 .single-job_listing .virtue-magazine-module {
+  display: none;
+}
+
+body.post-a-job .virtue-magazine-module,
+body.job-dashboard .virtue-magazine-module {
+  display: none;
+}
+body.post-a-job .donate-module,
+body.job-dashboard .donate-module {
   display: none;
 }
 
