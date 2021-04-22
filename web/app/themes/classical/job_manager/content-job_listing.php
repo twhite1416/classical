@@ -59,7 +59,7 @@ global $post;
         <?php endforeach; endif; ?>
       <?php } ?>
 
-      <li class="date"><?php the_job_publish_date(); ?></li>
+      <li class="date"><?= date("F, Y", strtotime(get_the_job_publish_date())) ?></li>
 
       <?php do_action( 'job_listing_meta_end' ); ?>
     </ul>
