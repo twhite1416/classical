@@ -73,7 +73,7 @@ global $job_manager;
 			<input type="hidden" name="job_manager_form" value="<?php echo esc_attr( $form ); ?>" />
 			<input type="hidden" name="job_id" value="<?php echo esc_attr( $job_id ); ?>" />
 			<input type="hidden" name="step" value="<?php echo esc_attr( $step ); ?>" />
-      <button type="submit" name="submit_job" class="btn btn-outline-primary" role="button"><?php echo esc_attr( $submit_button_text ); ?></button>
+      <input type="submit" name="submit_job" class="btn btn-outline-primary button" value="<?php echo esc_attr( $submit_button_text ); ?>" />
 			<?php /*
 			if ( isset( $can_continue_later ) && $can_continue_later ) {
 				echo '<button type="submit" name="save_draft" class="btn btn-outline-gold save_draft ml-3" formnovalidate />Save Draft</Button>';
